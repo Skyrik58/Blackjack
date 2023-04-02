@@ -28,6 +28,7 @@ int main () {
     vector <int> player_pip {};
     vector <int> dealer_suit {};
     vector <int> dealer_pip {};
+    //I added some text
     
     //build the deck with 4 rows of 1-13
     build_deck(&main_deck);
@@ -420,32 +421,3 @@ bool check_win(int p_total, int d_total, int selection, int* balance, int wager,
         }
     }
     return false;
-}
-//  _____   _____   _____   _____
-// |A    | |T    | |A    | |T    |
-// |     | |     | |     | |     |
-// |  ♥  | |  ♣  | |  ♥  | |  ♣  |
-// |     | |     | |     | |     |
-// |____A| |____T| |____A| |____T|
-
-/*
- * Inefficient & scrapped code
- */
-
-// Assign the value of cards
-//void build_deck(vector<vector<char>> *deck_ptr) {
-//    for (int i {}; i < 4; i++) {
-//        for (int j {}; j < 13; j++) {
-//            if (j >= 0 && j < 9)
-//                (*deck_ptr).at(i).at(j) = 1 + j;
-//            else if (j == 9)
-//                (*deck_ptr).at(i).at(j) = 'J';
-//            else if (j == 10)
-//                (*deck_ptr).at(i).at(j) = 'Q';
-//            else if (j == 11)
-//                (*deck_ptr).at(i).at(j) = 'K';
-//            else
-//                (*deck_ptr).at(i).at(j) = 'A';
-//        }
-//    }
-//}
